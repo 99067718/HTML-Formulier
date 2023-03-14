@@ -11,8 +11,12 @@
     <?php
     if ($_GET != "" && $_GET != null){
         ?>
-        <h1>wow you found the 404 page...</h1>
-        <h1>Just kidding</h1>
+        <h1>hi, this is an information page</h1>
+        <?php 
+
+        echo "Name: " . $_GET['fname'];?><br><br>
+        <?php 
+        echo "Email: ". $_GET['email'];?>
         <?php
     }
     else{
@@ -20,7 +24,7 @@
         <form>
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname" value="" placeholder="John"><br>
-        <label for="lname">Maid:</label><br>
+        <label for="mail">Maid:</label><br>
         <input type="text" id="email" name="email" value="" placeholder="test@example.com"><br><br>
         <input type="submit" value="Submit">
     </form>
